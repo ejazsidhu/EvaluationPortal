@@ -1,0 +1,67 @@
+<div class="container-fulid">
+    <div class="container">
+
+
+        <div class="row justify-content-center mt-5">
+            <ng-container *ngFor="let item of data">
+
+                <ng-container *ngFor="let sec of item?.section">
+                    <ng-container *ngFor="let img of sec.images;let i=index">
+                        <div class="col-md-6 jumbotron item">
+                            {{img.imageUrl }}{{i}}
+                        </div>
+                    </ng-container>
+
+
+                    <ng-container class="mt-5 justify-content-center" *ngIf="sec?.table">
+                        <div class="col-md-12 mt-5">
+                            <table class="table">
+                                <tr *ngFor="let tab of sec?.table;let j= index">
+                                    <th style="width:50%">{{j}}-{{tab.heading}}</th>
+                                    <td style="width:50%"> {{j}}-{{tab.value}}</td>
+                                </tr>
+
+                            </table>
+
+                        </div>
+                    </ng-container>
+
+                </ng-container>
+
+
+            </ng-container>
+
+        </div>
+
+        <!-- <div class="row text-center justify-content-center">
+            <div class="col-md-4 jumbotron item">
+
+            </div>
+            <div class="col-md-4 jumbotron item  ">
+
+            </div>
+            <div class="col-md-4 jumbotron item ">
+
+            </div>
+            <div class="col-md-4 jumbotron item">
+
+            </div>
+            <div class="col-md-4 jumbotron item  ">
+
+            </div>
+            <div class="col-md-4 jumbotron item ">
+
+            </div>
+            <div class="col-md-4 jumbotron item">
+
+            </div>
+            <div class="col-md-4 jumbotron item  ">
+
+            </div>
+            <div class="col-md-4 jumbotron item ">
+
+            </div>
+
+        </div> -->
+    </div>
+</div>

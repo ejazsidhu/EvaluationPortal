@@ -1,0 +1,5 @@
+.item {
+    border: 1pt seagreen solid;
+    margin: .1%;
+    max-width: 350px;
+}
