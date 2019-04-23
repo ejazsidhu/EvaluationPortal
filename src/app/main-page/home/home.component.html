@@ -4,6 +4,11 @@
 
         <div class="row justify-content-center mt-5">
             <ng-container *ngFor="let item of data">
+                <div class="col-md-12 text-center">
+                    <hr>
+                    <h3>{{item?.title}}</h3>
+                    <hr>
+                </div>
 
                 <ng-container *ngFor="let sec of item?.section">
                     <ng-container *ngFor="let img of sec.images;let i=index">
@@ -64,4 +69,4 @@
 
         </div> -->
     </div>
-</div>
+</div>s
